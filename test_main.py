@@ -1,25 +1,14 @@
-from main import add
-from main import get_the_capital_of_a_country
+from main import load_dataset, save_plot
+from convert_to_markdown import save_summaries_to_markdown
 
 
-def test_add():
-    """Tewting the add function"""
-    assert add(2, 2) == 4
-    assert add(3, 2) == 5
-
-
-def test_countries():
-    """testing out get_the_capital_of_a_country function"""
-    assert get_the_capital_of_a_country("United States") == "Washington D.C."
-    assert get_the_capital_of_a_country("Ghana") == "Accra"
-    assert get_the_capital_of_a_country("united states") == "Washington D.C."
-    assert (
-        get_the_capital_of_a_country("London")
-        == "The country you specified was not found!"
-    )
+def test_load_dataset():
+    """Testing the add function"""
+    assert load_dataset("World_Happiness_Report_2024.csv").shape == (2363, 11)
+    return
 
 
 if __name__ == "__main__":
-    test_add()
-    test_countries()
+    test_load_dataset()
+
     print("Test completed successfully")

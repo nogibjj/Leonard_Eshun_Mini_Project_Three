@@ -28,9 +28,6 @@ It has two functions:
 	```
 
 
-> [!TIP]
-> Just clone the repository to your local machine or codespace and enjoy.
-
 
 
 ## Steps taken to meet the requirements
@@ -41,6 +38,3 @@ The code was pushed to Github and Github Actions did the following main things:
 1. All python files were formated by black
 1. Code linting was done
 1. Finally all the tests in the test_main.py were executed
-
-> [!IMPORTANT]
-> All the above steps had to be successful to get a completed CI/CD.
