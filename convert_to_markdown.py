@@ -9,7 +9,7 @@ from main import (
 # saving markdown
 def save_summaries_to_markdown(data) -> str:
     save_plot()
-    with open("summary_statistics.md", "w") as file:
+    with open("summary_statistics.md", "w", encoding="utf-8") as file:
         file.write("# Summaries Statistics Grouped By Year\n")
         file.write(get_summaries_per_year(data).to_pandas().to_markdown())
         file.write("\n\n")
