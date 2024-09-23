@@ -10,10 +10,10 @@ from main import (
 def save_summaries_to_markdown(data) -> str:
     save_plot()
     with open("summary_statistics.md", "w", encoding="utf-8") as file:
-        file.write("# Summaries Statistics Grouped By Year\n")
+        file.write("# Summary Statistics Grouped By Year\n")
         file.write(get_summaries_per_year(data).to_pandas().to_markdown())
         file.write("\n\n")
-        file.write("# Summaries Statistics Grouped By Country\n")
+        file.write("# Summary Statistics Grouped By Country\n")
         file.write(get_summaries_per_country(data).to_pandas().to_markdown())
         # file.write("# Country Values Per Year\n")
         # file.write(get_country_per_year(data).to_pandas().to_markdown())

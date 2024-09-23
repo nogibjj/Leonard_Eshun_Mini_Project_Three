@@ -100,15 +100,10 @@ def get_country_per_year(dataset):
 def save_plot():
     data = load_dataset("World_Happiness_Report_2024.csv")
 
-    yearly_data = get_country_per_year(data)
-
     yearly_average = get_average_per_year(data)
-
     # Extract unique years and categories
-    years = yearly_data["year"].unique().to_list()
-
+    years = yearly_average["year"].unique().to_list()
     plt.figure(figsize=(14, 6))
-
     plt.bar(
         years,
         yearly_average["Mean"],
@@ -118,7 +113,5 @@ def save_plot():
     plt.ylabel("Average Value")
     plt.title("Yearly Average Value by Category")
     plt.xticks(years)  # Set x-axis to show all years
-
-    plt.legend(title="Category")
 
     plt.savefig("yearly_average.png")

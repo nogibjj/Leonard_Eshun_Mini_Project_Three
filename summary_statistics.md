@@ -1,4 +1,4 @@
-# Summaries Statistics Grouped By Year
+# Summary Statistics Grouped By Year
 |    |   year |    Mean |   Median |   Std Deviation |   Maximum |   Minimum |
 |---:|-------:|--------:|---------:|----------------:|----------:|----------:|
 |  0 |   2005 | 66.8259 |  67.1    |         4.12903 |    72.4   |      53.2 |
@@ -21,7 +21,7 @@
 | 17 |   2022 | 62.9559 |  65.7625 |        12.2923  |    74.475 |       0   |
 | 18 |   2023 | 63.771  |  65.95   |        11.0036  |    74.6   |       0   |
 
-# Summaries Statistics Grouped By Country
+# Summary Statistics Grouped By Country
 |     | Country name              |    Mean |   Median |   Std Deviation |   Maximum |   Minimum |
 |----:|:--------------------------|--------:|---------:|----------------:|----------:|----------:|
 |   0 | Afghanistan               | 52.7117 |  52.6    |        1.4957   |    55.2   |    50.5   |
