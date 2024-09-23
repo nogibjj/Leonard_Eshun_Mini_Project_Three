@@ -4,3 +4,4 @@ black==22.3.0
 pytest==7.4.0
 pylint==2.15.3
 pyarrow==17.0.0 #just to create markdown in CI/CD
+pandas==2.2.2 #just to create markdown in CI/CD
