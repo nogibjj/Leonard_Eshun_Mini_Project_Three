@@ -72,13 +72,13 @@ def get_country_per_year(dataset):
     set_expected_years = set(expected_years)
     # Find the years missing
     plot_data = {
-        category: (
+        country: (
             set_expected_years
             - set(
-                yearly_data.filter(pl.col("Country name") == category)["year"].to_list()
+                yearly_data.filter(pl.col("Country name") == country)["year"].to_list()
             )
         )
-        for category in countries
+        for country in countries
     }
 
     # Append the missing years to the dataframe giving it zero for Healthy life expectancy at birth
@@ -110,8 +110,8 @@ def save_plot():
     )
     # Adding labels and title
     plt.xlabel("Year")
-    plt.ylabel("Average Value")
-    plt.title("Yearly Average Value by Category")
+    plt.ylabel("Mean Healthy life expectancy at birth")
+    plt.title("Yearly Mean Healthy life expectancy at birth")
     plt.xticks(years)  # Set x-axis to show all years
 
     plt.savefig("yearly_average.png")
