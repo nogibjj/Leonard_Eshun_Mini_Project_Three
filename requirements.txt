@@ -1,5 +1,5 @@
-#devops
-#pytest-cov==4.0.0
+polars==1.7.1
+matplotlib==3.9.2
 black==22.3.0
 pytest==7.4.0
 pylint==2.15.3
